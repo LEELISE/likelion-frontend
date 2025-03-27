@@ -75,6 +75,6 @@ function displayMessage(data) {
 }
 
 function leaveRoom() {
-    socket.send(JSON.stringify({ type: 'leave', roomId }));
+    socket.send(JSON.stringify({ type: 'LEAVE', roomId }));
     window.location.href = 'index.html';
 }
